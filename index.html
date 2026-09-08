@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pragma | the governed AI co-worker for software delivery</title>
+  <meta name="description" content="Pragma is the governed AI co-worker that works with your team like a colleague, from story to reviewed pull request, with every decision recorded.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <style>.diagram-mobile{display:none}@media(max-width:560px){.diagram-a,.diagram-b{display:none}.diagram-mobile{display:block;max-width:360px}}</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="#top" aria-label="Pragma home">Pragma</a>
+      <a class="header-contact" href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-name" aria-hidden="true">Pragma</div>
+      <div class="hero-copy">
+        <h1 id="hero-title">the governed AI co-worker for software delivery</h1>
+        <p>Many tools can take a story to completion; Pragma works with your team the way a colleague does, carrying it from your project tool to a reviewed pull request with every decision recorded.</p>
+        <a class="primary-link" href="#contact">Talk to us</a>
+      </div>
+    </section>
+
+    <section class="section shell" id="how-it-works" aria-labelledby="how-title">
+      <div class="section-heading">
+        <h2 id="how-title">A day in the life of Pragma on your team</h2>
+      </div>
+
+      <ol class="walkthrough">
+        <li>
+          <span class="step-number" aria-hidden="true">0</span>
+          <div>
+            <h3>Pragma knows your business.</h3>
+            <p>Before the first story, Pragma builds a map of your business capabilities and the code behind them, and confirms that understanding with you. Every story is read against that picture, not in isolation.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-number" aria-hidden="true">1</span>
+          <div>
+            <h3>A story is assigned.</h3>
+            <p>Someone adds the Pragma label to a story in Jira or GitHub Issues. Pragma picks it up the way an assigned engineer would.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-number" aria-hidden="true">2</span>
+          <div>
+            <h3>Pragma reviews it.</h3>
+            <p>Pragma reads the story and the acceptance criteria, checks them against its understanding of your business and your codebase, and drafts a technical approach. Gaps, risks and conflicts become questions, not assumptions.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-number" aria-hidden="true">3</span>
+          <div>
+            <h3>Pragma clarifies with your product owner.</h3>
+            <p>In the story's Slack or Microsoft Teams thread, Pragma asks what is unclear. It works through the answers, a little back and forth, until the story is understood.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-number" aria-hidden="true">4</span>
+          <div>
+            <h3>Pragma confirms the approach with your developer.</h3>
+            <p>With the clarifications in hand, Pragma refines the technical approach. It talks it through with the assigned developer in the same messaging tool until the developer confirms it.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-number" aria-hidden="true">5</span>
+          <div>
+            <h3>Pragma does the work, and asks for help when stuck.</h3>
+            <p>Pragma implements in its own isolated workspace. When it hits a problem it cannot resolve, it reaches out to the developer in the channel, the way a teammate would, then carries on.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-number" aria-hidden="true">6</span>
+          <div>
+            <h3>Pragma opens the pull request and tells the team.</h3>
+            <p>Pragma verifies the change, opens the pull request, and notifies the developer and the team in the channel. Review comments, change requests and CI failures come back to it until the merge.</p>
+          </div>
+        </li>
+      </ol>
+
+      <figure class="diagram-shell">
+        <svg class="diagram diagram-a" viewBox="0 0 900 1040" role="img" aria-labelledby="diagram-a-title diagram-a-desc">
+          <title id="diagram-a-title">Pragma's day-to-day delivery flow</title>
+          <desc id="diagram-a-desc">Project management, communications, and source control connect to seven steps from confirming business understanding through working the review to merge.</desc>
+          <defs>
+            <marker id="arrow-a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+              <path d="M 0 0 L 8 4 L 0 8 Z" class="svg-arrow-head"></path>
+            </marker>
+          </defs>
+
+          <text class="svg-lane" x="20" y="38">TEAM TOOLS</text>
+          <text class="svg-lane" x="485" y="38">DELIVERY FLOW</text>
+
+          <g class="svg-tool-card">
+            <rect class="svg-card" x="20" y="112" width="285" height="120" rx="3"></rect>
+            <rect class="svg-card-band" x="21" y="113" width="283" height="27" rx="2"></rect>
+            <rect class="svg-card-band" x="21" y="204" width="283" height="27"></rect>
+            <line class="svg-card-rule" x1="20" y1="140" x2="305" y2="140"></line>
+            <line class="svg-card-rule" x1="20" y1="204" x2="305" y2="204"></line>
+            <text class="svg-card-heading" x="36" y="132">PROJECT MANAGEMENT</text>
+            <text class="svg-card-copy" x="36" y="165" aria-label="The story starts here, with the Pragma label.">
+              <tspan x="36">The story starts here, with the</tspan>
+              <tspan x="36" dy="20">Pragma label.</tspan>
+            </text>
+            <text class="svg-card-footer" x="36" y="223">Jira, GitHub Issues</text>
+          </g>
+
+          <g class="svg-tool-card">
+            <rect class="svg-card" x="20" y="260" width="285" height="462" rx="3"></rect>
+            <rect class="svg-card-band" x="21" y="261" width="283" height="27" rx="2"></rect>
+            <rect class="svg-card-band" x="21" y="694" width="283" height="27"></rect>
+            <line class="svg-card-rule" x1="20" y1="288" x2="305" y2="288"></line>
+            <line class="svg-card-rule" x1="20" y1="388" x2="305" y2="388"></line>
+            <line class="svg-card-rule" x1="20" y1="694" x2="305" y2="694"></line>
+            <text class="svg-card-heading" x="36" y="280">COMMUNICATIONS</text>
+            <text class="svg-card-copy" x="36" y="342">Product owner: clarifying the story</text>
+            <text class="svg-card-copy" x="36" y="462">Developer: approach, help, review</text>
+            <text class="svg-card-footer" x="36" y="713">Slack, Microsoft Teams</text>
+          </g>
+
+          <g class="svg-tool-card">
+            <rect class="svg-card" x="20" y="742" width="285" height="276" rx="3"></rect>
+            <rect class="svg-card-band" x="21" y="743" width="283" height="27" rx="2"></rect>
+            <rect class="svg-card-band" x="21" y="990" width="283" height="27"></rect>
+            <line class="svg-card-rule" x1="20" y1="770" x2="305" y2="770"></line>
+            <line class="svg-card-rule" x1="20" y1="990" x2="305" y2="990"></line>
+            <text class="svg-card-heading" x="36" y="762">SOURCE CONTROL</text>
+            <text class="svg-card-copy" x="36" y="808" aria-label="The change lands as a pull request your engineers review.">
+              <tspan x="36">The change lands as a pull request</tspan>
+              <tspan x="36" dy="20">your engineers review.</tspan>
+            </text>
+            <text class="svg-card-footer" x="36" y="1009">GitHub, Bitbucket</text>
+          </g>
+
+          <rect class="svg-box svg-flow-box" x="485" y="62" width="395" height="72" rx="3"></rect>
+          <text class="svg-label" x="682.5" y="104" text-anchor="middle">Confirm business understanding</text>
+
+          <rect class="svg-box svg-flow-box" x="485" y="182" width="395" height="72" rx="3"></rect>
+          <text class="svg-label" x="682.5" y="224" text-anchor="middle">Read the story and acceptance criteria</text>
+
+          <rect class="svg-box svg-flow-box" x="485" y="302" width="395" height="72" rx="3"></rect>
+          <text class="svg-label" x="682.5" y="344" text-anchor="middle">Clarify with the product owner</text>
+
+          <rect class="svg-box svg-flow-box" x="485" y="422" width="395" height="72" rx="3"></rect>
+          <text class="svg-label" x="682.5" y="464" text-anchor="middle">Confirm the approach with the developer</text>
+
+          <rect class="svg-box svg-flow-box" x="485" y="542" width="395" height="72" rx="3"></rect>
+          <text class="svg-label" x="682.5" y="584" text-anchor="middle">Implement; ask for help when stuck</text>
+
+          <rect class="svg-box svg-flow-box" x="485" y="662" width="395" height="120" rx="3"></rect>
+          <text class="svg-label" x="682.5" y="728" text-anchor="middle">Verify and open the pull request</text>
+
+          <rect class="svg-box svg-flow-box" x="485" y="882" width="395" height="72" rx="3"></rect>
+          <text class="svg-label" x="682.5" y="924" text-anchor="middle">Work the review to merge</text>
+
+          <path class="svg-arrow" d="M682.5 134 V181" marker-end="url(#arrow-a)"></path>
+          <path class="svg-arrow" d="M682.5 254 V301" marker-end="url(#arrow-a)"></path>
+          <path class="svg-arrow" d="M682.5 374 V421" marker-end="url(#arrow-a)"></path>
+          <path class="svg-arrow" d="M682.5 494 V541" marker-end="url(#arrow-a)"></path>
+          <path class="svg-arrow" d="M682.5 614 V661" marker-end="url(#arrow-a)"></path>
+          <path class="svg-arrow" d="M682.5 782 V881" marker-end="url(#arrow-a)"></path>
+
+          <path class="svg-arrow" d="M305 192 H484" marker-end="url(#arrow-a)"></path>
+          <path class="svg-arrow" d="M485 330 H306" marker-end="url(#arrow-a)"></path>
+          <path class="svg-arrow" d="M305 346 H484" marker-end="url(#arrow-a)"></path>
+          <path class="svg-arrow" d="M485 450 H306" marker-end="url(#arrow-a)"></path>
+          <path class="svg-arrow" d="M305 466 H484" marker-end="url(#arrow-a)"></path>
+          <path class="svg-arrow" d="M485 570 H306" marker-end="url(#arrow-a)"></path>
+          <path class="svg-arrow" d="M305 586 H484" marker-end="url(#arrow-a)"></path>
+          <path class="svg-arrow" d="M485 686 H306" marker-end="url(#arrow-a)"></path>
+          <path class="svg-arrow" d="M485 774 H306" marker-end="url(#arrow-a)"></path>
+          <path class="svg-arrow" d="M305 910 H484" marker-end="url(#arrow-a)"></path>
+          <path class="svg-arrow" d="M485 926 H306" marker-end="url(#arrow-a)"></path>
+
+          <rect class="svg-connector-label-bg" x="338" y="183" width="116" height="18" rx="2"></rect>
+          <text class="svg-arrow-label" x="396" y="196" text-anchor="middle">story + label</text>
+
+          <rect class="svg-connector-label-bg" x="342" y="321" width="106" height="18" rx="2"></rect>
+          <text class="svg-arrow-label" x="395" y="334" text-anchor="middle">questions</text>
+          <rect class="svg-connector-label-bg" x="359" y="337" width="72" height="18" rx="2"></rect>
+          <text class="svg-arrow-label" x="395" y="350" text-anchor="middle">answers</text>
+
+          <rect class="svg-connector-label-bg" x="353" y="441" width="84" height="18" rx="2"></rect>
+          <text class="svg-arrow-label" x="395" y="454" text-anchor="middle">approach</text>
+          <rect class="svg-connector-label-bg" x="348" y="457" width="94" height="18" rx="2"></rect>
+          <text class="svg-arrow-label" x="395" y="470" text-anchor="middle">confirmation</text>
+
+          <rect class="svg-connector-label-bg" x="342" y="561" width="106" height="18" rx="2"></rect>
+          <text class="svg-arrow-label" x="395" y="574" text-anchor="middle">help request</text>
+          <rect class="svg-connector-label-bg" x="357" y="577" width="76" height="18" rx="2"></rect>
+          <text class="svg-arrow-label" x="395" y="590" text-anchor="middle">guidance</text>
+
+          <rect class="svg-connector-label-bg" x="342" y="677" width="106" height="18" rx="2"></rect>
+          <text class="svg-arrow-label" x="395" y="690" text-anchor="middle">team notified</text>
+          <rect class="svg-connector-label-bg" x="344" y="765" width="102" height="18" rx="2"></rect>
+          <text class="svg-arrow-label" x="395" y="778" text-anchor="middle">pull request</text>
+
+          <rect class="svg-connector-label-bg" x="309" y="901" width="172" height="18" rx="2"></rect>
+          <text class="svg-arrow-label svg-arrow-label-long" x="395" y="914" text-anchor="middle" textLength="164" lengthAdjust="spacingAndGlyphs">review comments, CI results</text>
+          <rect class="svg-connector-label-bg" x="318" y="917" width="154" height="18" rx="2"></rect>
+          <text class="svg-arrow-label" x="395" y="930" text-anchor="middle">replies, updated branch</text>
+        </svg>
+        <ol class="diagram-mobile diagram-mobile-list" aria-label="Pragma's day-to-day delivery steps">
+          <li>Confirm business understanding</li>
+          <li>Read the story and acceptance criteria</li>
+          <li>Clarify with the product owner</li>
+          <li>Confirm the approach with the developer</li>
+          <li>Implement; ask for help when stuck</li>
+          <li>Verify and open the pull request</li>
+          <li>Work the review to merge</li>
+        </ol>
+        <figcaption>Story-to-pull-request loop</figcaption>
+      </figure>
+    </section>
+
+    <section class="section shell" id="control" aria-labelledby="control-title">
+      <div class="section-heading">
+        <h2 id="control-title">Where your people stay in control</h2>
+        <p>Set the collaboration dial for each team.</p>
+      </div>
+
+      <div class="mode-grid">
+        <article>
+          <h3>Full.</h3>
+          <p>Pragma talks everything through with your team.</p>
+        </article>
+        <article>
+          <h3>Notify only.</h3>
+          <p>Pragma reports as it goes and asks only when blocked.</p>
+        </article>
+        <article>
+          <h3>Autonomous.</h3>
+          <p>Pragma proceeds and records its concerns.</p>
+        </article>
+      </div>
+
+      <div class="control-copy">
+        <p>Approval gates pause work when complexity, story size, or estimated AI cost crosses the limit your team sets.</p>
+        <p>Any authorized teammate can take over a dialogue.</p>
+        <p>Every change is a pull request your engineers review.</p>
+        <p>Dialogues, decisions, AI usage and cost are on record.</p>
+      </div>
+
+      <article class="trust-block">
+        <h3>Built to be trusted with your code</h3>
+        <div class="trust-grid">
+          <p>On the managed path, each job runs as its own short-lived container with its own workspace, discarded when the job ends.</p>
+          <p>Repository and tool credentials are stored per company and encrypted with a company data key; a job receives identifiers, not secrets.</p>
+          <p>Each customer's data is separated by company, enforced in the database with row-level security policies.</p>
+          <p>Significant workflow actions are written to a durable audit trail.</p>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="section shell" id="outcomes" aria-labelledby="outcomes-title">
+      <div class="section-heading">
+        <h2 id="outcomes-title">What your business gets</h2>
+      </div>
+
+      <div class="outcome-grid">
+        <article>
+          <span aria-hidden="true">01</span>
+          <h3>Fully collaborative, not just automated</h3>
+          <p>Pragma asks, proposes, listens and agrees before it acts, like a colleague, not a script.</p>
+        </article>
+        <article>
+          <span aria-hidden="true">02</span>
+          <h3>The bigger picture, every time</h3>
+          <p>Its business map means questions and decisions are made in context.</p>
+        </article>
+        <article>
+          <span aria-hidden="true">03</span>
+          <h3>Scope agreed before code is written</h3>
+          <p>Your product owner clarifies the story, then Pragma and your developer agree the technical approach before implementation begins.</p>
+        </article>
+        <article>
+          <span aria-hidden="true">04</span>
+          <h3>Review stays with your engineers</h3>
+          <p>Every change arrives as a pull request for your engineers to review. They keep the merge decision.</p>
+        </article>
+        <article>
+          <span aria-hidden="true">05</span>
+          <h3>Works in the tools you already run</h3>
+          <p>Jira, GitHub Issues, GitHub, Bitbucket, Slack and Microsoft Teams.</p>
+        </article>
+        <article>
+          <span aria-hidden="true">06</span>
+          <h3>Every question, decision and cost on record</h3>
+          <p>Dialogues, decisions, AI usage and cost stay attached to the work.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section audience shell" id="who" aria-labelledby="who-title">
+      <h2 id="who-title">Built for teams ready to accelerate with AI, without giving up control</h2>
+      <p>Enterprises, software agencies and product teams that want the speed of AI-driven delivery and none of the blind spots: every question asked before code is written, every change reviewed by your engineers, every decision on record.</p>
+      <p>If your backlog is bigger than your team, Pragma is the colleague that takes the next story, works it with your people, and hands back a pull request you can trust.</p>
+      <p>A founding-partner pilot is running now. <a href="#contact">Talk to us about joining it.</a></p>
+    </section>
+
+    <section class="contact shell" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <a href="mailto:hello@getpragma.io">hello@getpragma.io</a>
+      <p>Pragma - founded 2026</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">(c) 2026 Pragma.</div>
+  </footer>
+</body>
+</html>
