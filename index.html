@@ -46,7 +46,7 @@
           <span class="step-number" aria-hidden="true">1</span>
           <div>
             <h3>A story is assigned.</h3>
-            <p>Someone adds the Pragma label to a story in Jira or GitHub Issues. Pragma picks it up the way an assigned engineer would.</p>
+            <p>Someone adds the Pragma label to a story in your project management tool. Pragma picks it up the way an assigned engineer would.</p>
           </div>
         </li>
         <li>
@@ -60,7 +60,7 @@
           <span class="step-number" aria-hidden="true">3</span>
           <div>
             <h3>Pragma clarifies with your product owner.</h3>
-            <p>In the story's Slack or Microsoft Teams thread, Pragma asks what is unclear. It works through the answers, a little back and forth, until the story is understood.</p>
+            <p>In the story's thread in your team chat, Pragma asks what is unclear. It works through the answers, a little back and forth, until the story is understood.</p>
           </div>
         </li>
         <li>
@@ -120,7 +120,7 @@
             <line class="svg-card-rule" x1="20" y1="288" x2="305" y2="288"></line>
             <line class="svg-card-rule" x1="20" y1="388" x2="305" y2="388"></line>
             <line class="svg-card-rule" x1="20" y1="694" x2="305" y2="694"></line>
-            <text class="svg-card-heading" x="36" y="280">COMMUNICATIONS</text>
+            <text class="svg-card-heading" x="36" y="280">TEAM CHAT</text>
             <text class="svg-card-copy" x="36" y="342">Product owner: clarifying the story</text>
             <text class="svg-card-copy" x="36" y="462">Developer: approach, help, review</text>
             <text class="svg-card-footer" x="36" y="713">Slack, Microsoft Teams</text>
@@ -137,7 +137,7 @@
               <tspan x="36">The change lands as a pull request</tspan>
               <tspan x="36" dy="20">your engineers review.</tspan>
             </text>
-            <text class="svg-card-footer" x="36" y="1009">GitHub, Bitbucket</text>
+            <text class="svg-card-footer" x="36" y="1009">GitHub (Bitbucket planned)</text>
           </g>
 
           <rect class="svg-box svg-flow-box" x="485" y="62" width="395" height="72" rx="3"></rect>
@@ -290,12 +290,56 @@
         <article>
           <span aria-hidden="true">05</span>
           <h3>Works in the tools you already run</h3>
-          <p>Jira, GitHub Issues, GitHub, Bitbucket, Slack and Microsoft Teams.</p>
+          <p>Your project management, source control and team chat tools today, your documentation sources next. <a href="#connectors">See the connectors.</a></p>
         </article>
         <article>
           <span aria-hidden="true">06</span>
           <h3>Every question, decision and cost on record</h3>
           <p>Dialogues, decisions, AI usage and cost stay attached to the work.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell" id="connectors" aria-labelledby="connectors-title">
+      <div class="section-heading">
+        <h2 id="connectors-title">Connects to the tools you already run</h2>
+        <p>Pragma calls the unit of work a story, whatever your tool calls it: an issue, a ticket, a work item. It meets your team in the tools where that story already lives.</p>
+      </div>
+
+      <div class="connector-grid">
+        <article>
+          <h3>Project Management</h3>
+          <p>Where stories are assigned, clarified and closed.</p>
+          <ul class="connector-list">
+            <li><span>Jira</span><em class="badge badge-live">Supported</em></li>
+            <li><span>GitHub Issues</span><em class="badge badge-live">Supported</em></li>
+          </ul>
+        </article>
+        <article>
+          <h3>Team Chat</h3>
+          <p>Where Pragma asks, proposes and confirms, in the story's own thread.</p>
+          <ul class="connector-list">
+            <li><span>Slack</span><em class="badge badge-live">Supported</em></li>
+            <li><span>Microsoft Teams</span><em class="badge badge-live">Supported</em></li>
+          </ul>
+        </article>
+        <article>
+          <h3>Source Control</h3>
+          <p>Where the change lands as a pull request your engineers review.</p>
+          <ul class="connector-list">
+            <li><span>GitHub</span><em class="badge badge-live">Supported</em></li>
+            <li><span>Bitbucket</span><em class="badge badge-next">Planned</em></li>
+          </ul>
+        </article>
+        <article>
+          <h3>Documentation</h3>
+          <p>Where Pragma reads your business, architecture and decisions to build its map.</p>
+          <ul class="connector-list">
+            <li><span>Confluence</span><em class="badge badge-next">Planned</em></li>
+            <li><span>SharePoint</span><em class="badge badge-next">Planned</em></li>
+            <li><span>OneDrive</span><em class="badge badge-next">Planned</em></li>
+          </ul>
+          <p class="connector-note">Planned for cloud and self-hosted instances alike.</p>
         </article>
       </div>
     </section>
