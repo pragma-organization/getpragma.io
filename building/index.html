@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What we are building | Pragma</title>
+  <meta name="description" content="Pragma is a governed AI software-delivery platform: an AI co-worker that turns a story into a reviewed pull request under your team's rules, with every decision, approval and dollar recorded.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css?v=5">
+  <style>
+    .prose h2 { margin-top: 2.5rem; }
+    .prose p { max-width: 72ch; line-height: 1.6; }
+    .prose .lede { font-size: 1.1em; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="/" aria-label="Pragma home">Pragma</a>
+      <a class="header-contact" href="/#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section shell prose" id="building" aria-labelledby="building-title">
+      <div class="section-heading">
+        <h1 id="building-title">What we are building</h1>
+        <p>The business, the product as it ships in full, and the technology behind it. September 2026.</p>
+      </div>
+
+      <p class="lede">Pragma is a governed AI software-delivery platform: an AI co-worker that takes a story from the project manager's tool and returns a reviewed pull request, working the way the customer's team works, with every decision, approval and dollar recorded. Software agencies and product teams already use AI coding agents. What they lack is a system that runs those agents inside their delivery process, under their rules, with an audit trail and a cost ledger they can show a client. Pragma is that system.</p>
+
+      <h2>The business</h2>
+      <p>Pragma (getpragma.io) is a self-funded SaaS company. Our launch customers are AI-forward software agencies of roughly 50 to 150 engineers that run retainer and maintenance work across mixed client stacks: Jira or GitHub Issues, GitHub or Bitbucket, Slack or Microsoft Teams. Pragma raises their margin on fixed-fee work, lets them absorb more backlog without hiring, and standardises quality across mixed-seniority teams, while their senior engineers move from ticket grinding to architecture and review. The second act sells the same governance layer to enterprise platform teams. The model is a per-company subscription with metered AI and compute; the first customers are design partners in a private pilot, followed by paid pilots and a public tier once pilot data sets the price. Today the product runs on AWS in a daily release train and delivers our own backlog.</p>
+
+      <h2>The product, as it ships in full</h2>
+      <p>A labelled story triggers a YAML playbook. Pragma reviews the story against the customer's codebase, answers what the code can answer, asks the product owner the rest in Slack or Teams and refines the story in place; writes the technical approach and the estimate; implements the change in an isolated sandbox; builds, tests and reviews its own work, including a security review; and opens the pull request. Pull-request comments, approvals and merges flow back into the run and into a trust ladder, so a team that keeps approving earns more autonomy, from full collaboration through notify-only to autonomous, set per company and per team.</p>
+      <p>One human interaction layer spans Slack, Teams, pull-request comments and the web app: dialogue threads, reactions as answers, reminders and escalations, a permission policy for who may do what, and an assistant that answers open-ended questions about the workspace. Pragma learns how each project and each developer works: it reads the repository's existing rule files (AGENTS.md, CLAUDE.md, Cursor and Copilot instructions), holds company, team and personal directives, proposes new rules from feedback for a human to confirm, and promotes accepted rules back into the repository as pull requests.</p>
+      <p>Cortex, a private semantic index of every customer repository (tree-sitter parsers for C#, Java, Go, JavaScript, TypeScript, Python and Rust, with vector embeddings), grounds every step and is exposed as an MCP server so the customer's own tools can use it. Above the code, Pragma drafts a business map for each company: a ten-thousand-foot business view for the product owner, a domain view for the developer, and a capability map that ties business capabilities to code, with a continuous change radar to follow. Modernization playbooks assess legacy systems and turn the assessment into living, phased plans that track against delivered stories.</p>
+      <p>Governance is built in: approval and spend gates (a cost quote before every managed build), a per-invocation AI cost ledger with agency-level roll-up, ROI and response-time reports, and signed, immutable audit exports.</p>
+
+      <h2>Technologies</h2>
+      <p>The backend is C# on .NET: an ASP.NET Core API, worker services, and Synapse, our workflow engine with nineteen node types and about fifty connectors covering project management, source control, chat, documentation, builds, billing and AI. The front end is React and TypeScript. PostgreSQL with pgvector is the single data store. Models: Anthropic Claude as the primary reasoning model and any OpenAI-compatible endpoint (OpenAI, Azure OpenAI, Groq, self-hosted Ollama) behind a provider chain with fallback and per-model pricing; embeddings run locally. Tenancy runs Platform, Organization, Company, Team, with row-level security, per-tenant KMS keys and envelope field encryption, a separate credential-authority service, and legal-hold and erasure paths.</p>
+
+      <h2>On AWS</h2>
+      <p>Customer code is built and tested in per-job Amazon ECS Fargate tasks in a zero-egress build plane that never holds credentials, fed by a control plane that does. Toolchain images are baked per repository by an agent, scanned and stored in Amazon ECR. Dependencies are hydrated from content-addressed caches in Amazon S3 and AWS CodeArtifact. AWS KMS, Secrets Manager and STS scope every credential; Lambda, Step Functions and CodeBuild drive the image bake; CloudWatch and CloudTrail carry logs and the audit trail; VPC, Elastic Load Balancing and Route 53 form the edge; SNS carries alerts. Today the application tier and our verification workload run on EC2. As we scale we will move the application tier to ECS, the database to Amazon RDS for PostgreSQL, add Amazon Bedrock as a model provider for customers who need in-region inference, deploy per region for data residency, and serve the web app through CloudFront. A customer-hosted runner (mutual TLS, SPIFFE identities) covers code that must never leave the customer's network.</p>
+
+      <p><a class="primary-link" href="/#contact">Talk to us</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">(c) 2026 Pragma.</div>
+  </footer>
+</body>
+</html>
